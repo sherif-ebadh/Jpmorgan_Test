@@ -102,7 +102,7 @@ public class RecordService {
 		if (entity == null || entity.equalsIgnoreCase("")) {
 			return false;
 		}
-		if (type == null || type.equalsIgnoreCase("")) {
+		if (type == null || type.equalsIgnoreCase("") || !type.equals("B") || !type.equals("S")) {
 			return false;
 		}
 		if (agreedFX <= 0) {
